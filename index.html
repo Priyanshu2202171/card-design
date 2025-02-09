@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .outer {
+            position: relative;
+            height: 100vh;
+        }
+
+        .in1 {
+            border: 1px solid black;
+            height: 72vh;
+            width: 25vw;
+            box-sizing: border-box;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgb(218, 248, 248);
+
+        }
+
+        .in2 {
+            border: 1px solid black;
+            position: relative;
+            width: 19vw;
+            height: 66vh;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 0px;
+            border-radius: 15px;
+            background-color: rgb(251, 251, 251);
+
+
+
+        }
+
+        .img {
+            display: block;
+            height: 30vh;
+            width: 18vw;
+            border: 1px solid black;
+            margin: 5px auto;
+            border-radius: 15px;
+
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+            margin: 15px;
+        }
+
+        ul li {
+            border: 1px solid rgb(92, 81, 81);;
+            margin: 4px;
+            padding: 4px;
+            color: rgb(116, 115, 115);
+            border-radius: 10px;
+        }
+
+        .hd {
+            margin: 10px;
+            color: rgb(45, 43, 43);
+        }
+
+        .par {
+            margin: 5px;
+            color: rgb(116, 115, 115);
+        }
+
+        span {
+            display: block;
+            width: fit-content;
+            /* Makes the span only as wide as its content */
+            margin: auto;
+            border: 1px solid rgb(111, 212, 212);;
+            padding: 10px;
+            /* Centers it horizontally */
+            color: rgb(94, 94, 197);
+            border-radius: 25px;
+            background-color: rgb(111, 212, 212);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="in1">
+            <div class="in2">
+                <img src="l2.png" alt="lakeimage" class="img">
+
+                <ul>
+                    <li>Nature</li>
+                    <li>Lake</li>
+                </ul>
+
+                <div class="hd">
+                    <h1>Lake Scenary</h1>
+                </div>
+                <div class="par">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea assumenda veritatis neque nesciunt,
+                        accusantium recusandae obcaecati.
+                    </p>
+                </div>
+                <span>
+                    Read more
+                </span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
